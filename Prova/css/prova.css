@@ -1,0 +1,195 @@
+body{
+	margin: 0px;
+	padding-top: 150px;
+	padding-bottom: 40px;
+	display: flex;
+	justify-content: center;
+}
+.divHeader{
+	background-color: white;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.divHeaderTop{
+	display: flex;
+	justify-content: space-between;
+	height: 30px;
+	border-bottom: 1px solid lightgray;
+	padding: 10px;
+}
+
+.imgLogo{
+	width: 90px;
+	height: 30px;
+}
+.divContainer{
+	width: 90%;
+}
+
+.bTop{
+	font-size: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.imgIconSearch{
+	max-height: 70%;
+	max-width: 70%;
+}
+.divHeaderTopLeft, .divHeaderTopRight, .divHeaderTopMiddle{
+	display: flex;
+	align-items: center;
+}
+
+.imgGlobe, .imgUser, .img3dashes{
+	max-height: 20px;
+	max-width: 20px;
+
+}
+.divUser{
+	border: 1px solid lightgray;
+	margin-left: 5px;
+	border-radius: 25px;
+	padding: 5px;
+}
+.divHeaderTopMiddle{
+	border: 1px solid lightgray;
+	border-radius: 25px;
+	justify-content: space-around;
+	padding: 2px;
+	max-height: 30px;
+}
+
+
+.divRefugeCategories{
+	margin-top: 10px;
+	display: flex;
+	overflow-x: auto;
+}
+.divRefugeCategories::-webkit-scrollbar{
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	background-color: white;
+}
+.divRefugeCategories::-webkit-scrollbar-thumb{
+	border: 1px solid lightgray;
+	border-radius: 5px;
+	background-color: whitesmoke;
+
+}
+
+.divCategories{
+	text-align: center;
+	margin-right: 1%;
+	border-bottom: 3px solid transparent;
+
+}
+.h6Categories{
+	margin: 0px;
+}
+.divCategories:hover{
+	border-bottom: 3px solid black;
+	transition: 0.5s;
+}
+.imgCategories{
+	max-width: 30px;
+	max-height: 30px;
+}
+
+.divRefugeHotels{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 2%;
+	grid-row-gap: 7%;
+}
+.imgHotels{
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+.h5Hotels{
+	margin-bottom: 1%;
+	margin-top: 1%;
+}
+.h6Hotels{
+	margin: 0px;
+	color: gray;
+}
+.divFooter{
+	position: fixed;
+	bottom: 0px;
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	border-top: 1px solid lightgray;
+	width: 100%;
+	height: 5%;
+}
+
+a{
+	color: gray;
+	text-decoration: none;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+a:hover{
+	text-decoration: underline;
+}
+.divContainer-Fotter{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	align-items: center;
+}
+
+
+@media (max-width: 1300px){
+.divRefugeHotels{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-column-gap: 2%;
+	grid-row-gap: 7%;
+}
+.divFooter{
+	display: none;
+}
+}
+
+
+
+
+@media (max-width: 800px){
+.divRefugeHotels{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 2%;
+	grid-row-gap: 5%;
+}
+
+.divHeaderTopRight, .divHeaderTopMiddle {
+	display: none;
+}
+.divHeaderTop{
+	display: flex;
+	justify-content: center;
+}
+
+}
+
+
+
+
+
+@media (max-width: 600px){
+.divRefugeHotels{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 2%;
+	grid-row-gap: 3%;}
+
+
+}
+
